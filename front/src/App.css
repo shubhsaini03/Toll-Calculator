@@ -1,0 +1,99 @@
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-131921: #131921;
+  --color-3b4149: #3b4149;
+  --color-febd69: #febd69;
+  --color-232f3e: #232f3e;
+  --color-bf4800: #bf4800;
+  --color-f5f5f7: #f5f5f7;
+  --color-ededed: #ededed;
+  --color-777777: #777777;
+  --color-1c1c1b: #1c1c1b;
+}
+
+body 
+{
+  background-color: #1a232e;
+  overflow-x: hidden;
+}
+.link 
+{
+  text-decoration: none;
+  text-transform: capitalize;
+  color: white;
+}
+button 
+{
+  cursor: pointer;
+}
+.Expenses p{
+color: white;
+font-weight: bold;
+  margin-left: 50px;
+  
+}
+.Expenses{
+  margin-bottom:30px;
+}
+
+.home-wrapper-2 {
+  background-color: var(--color-f5f5f7);
+  margin-top: 10px;
+}
+.home-wrapper-2 h6,p{
+  font-weight: bolder;
+  color: white;
+}
+@media only screen and (max-width:767px){
+  .servies{
+  display:flex;
+  flex-wrap:wrap;
+  }
+}
+.contact-inner-wrapper {
+  padding: 30px 20px;
+  border-radius: 15px;
+  background-color: #1a232e;
+  gap: 15px;
+}
+.contact-inner-wrapper > div {
+  width: 48%;
+}
+.contact-title {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 35px;
+  text-align: left;
+  color: white;
+}
+.contact-inner-wrapper form .form-control {
+
+  background-color: #1a232e;
+  border-radius: 20px;
+  border-color:#ededed;
+  padding: 10px;
+}
+.contact-inner-wrapper ul {
+  list-style: none;
+}
+.contact-inner-wrapper address,
+.contact-inner-wrapper a,
+.contact-inner-wrapper p {
+  color: white;
+}
+.nav h2{
+  margin-right: 400px;
+  
+}
+
+.contact-inner-wrapper ::placeholder{
+  color: #f5f5f7;
+}
+.contact-inner-wrapper button{
+  border-color: #ededed;
+}
