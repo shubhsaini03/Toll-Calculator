@@ -4,7 +4,7 @@ import GoogleRoute from './routes/Google.js'
 import TollGuruRoute from './routes/Toll.js'
 import cors from 'cors'
 import path from 'path'
-import {fileURLToPath} from 'url
+import {fileURLToPath} from 'url'
 env.config()
 let app=express()
 
