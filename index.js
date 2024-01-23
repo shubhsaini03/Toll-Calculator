@@ -9,7 +9,7 @@ env.config()
 let app=express()
 
 const __filename=fileURLToPath(import.meta.url)
-const __direname=path.dirname(__filename)
+const __dirname=path.dirname(__filename)
 app.use(express.json())
 app.use(cors())
 app.use(express.static(path.join(__dirname, '../front/build')))
