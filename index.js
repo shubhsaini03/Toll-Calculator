@@ -12,14 +12,14 @@ const __filename=fileURLToPath(import.meta.url)
 const __dirname=path.dirname(__filename)
 app.use(express.json())
 app.use(cors())
-app.use(express.static(path.join(__dirname, '../front/build')))
+app.use(express.static(path.join(__dirname, './front/build')))
 
 
 app.use('/polyline',GoogleRoute)
 app.use('/polyline',TollGuruRoute)
 
 app.use('*',function(req,res){
-    res.sendFile(path.join(__dirname,'../front/build/index.html'))
+    res.sendFile(path.join(__dirname,'./front/build/index.html'))
 })
 
 let start=()=>
