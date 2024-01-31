@@ -5,11 +5,13 @@ import TollGuruRoute from './routes/Toll.js'
 import cors from 'cors'
 import path from 'path'
 import {fileURLToPath} from 'url'
+import bodyParser from 'body-parser'
 env.config()
 let app=express()
 
 
-app.use(express.json())
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({extended:false}))
 app.use(cors())
 
 
