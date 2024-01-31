@@ -8,18 +8,15 @@ import {fileURLToPath} from 'url'
 env.config()
 let app=express()
 
-const __dirname=path.resolve()
+
 app.use(express.json())
 app.use(cors())
-app.use(express.static(path.join(__dirname, './front/build')))
 
 
 app.use('/polyline',GoogleRoute)
 app.use('/polyline',TollGuruRoute)
 
-app.use('*',function(req,res){
-    res.sendFile(path.join(__dirname,'./front/build/index.html'))
-})
+
 
 let start=()=>
 {
